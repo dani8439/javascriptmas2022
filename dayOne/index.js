@@ -16,9 +16,15 @@ function panic(str){
     // if str contains a " "
     // split string into array 
     // capitalize + add 😱 
-    // join and then return new string 
+    // join and then return new string
+    if (str.includes(" ")) {
+        let newStr = str.toUpperCase() + "!";
+        return newStr.split(" ").join(" 😱 ")
+    } else {
     // if str does not contain a " "
     // capitalize and return with "!"
+        return str.toUpperCase() + "!"
+    }
 }
 
 
