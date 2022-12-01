@@ -13,7 +13,12 @@ Example output: "I'M 😱 ALMOST 😱 OUT 😱 OF 😱 COFFEE!"
 */
 
 function panic(str){
-    return str.toUpperCase() + "!";
+    // if str contains a " "
+    // split string into array 
+    // capitalize + add 😱 
+    // join and then return new string 
+    // if str does not contain a " "
+    // capitalize and return with "!"
 }
 
 
