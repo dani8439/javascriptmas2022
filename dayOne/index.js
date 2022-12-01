@@ -13,7 +13,7 @@ Example output: "I'M 😱 ALMOST 😱 OUT 😱 OF 😱 COFFEE!"
 */
 
 function panic(str){
-    return str.toUpperCase();
+    return str.toUpperCase() + "!";
 }
 
 
