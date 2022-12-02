@@ -37,7 +37,6 @@ function transformData(data){
         birthday: `${dt.toDateString()}`
     }
    })
-
 }
 
 
