@@ -32,7 +32,9 @@ function transformData(data){
 
    data.map((name) => {
     return {
-        fullName: `${name.name.first} ${name.name.last}`
+        fullName: `${name.name.first} ${name.name.last}`,
+        birthday: `${name.dob.date}`
+        // wrong not showing parsed data. 
     }
    })
 
