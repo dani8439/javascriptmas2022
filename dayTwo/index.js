@@ -25,7 +25,13 @@ Read about toDateString() for info on formatting a readable date.
 
 */
 function transformData(data){
+    // map over the data.js array 
+    // create a new object
+    // combine ["name"]["first"] and ["name"]["last"] into a string
+    // use toDateString on ["dob"]["date"]
 
 }
 
 console.log(transformData(userData));
+console.log(userData[0]["name"]["first"], userData[0]["name"]["last"])
+console.log(userData[0]["dob"]["date"])
