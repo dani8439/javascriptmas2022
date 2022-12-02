@@ -30,14 +30,14 @@ function transformData(data){
     // combine ["name"]["first"] and ["name"]["last"] into a string
     // use toDateString on ["dob"]["date"]
 
-    // const newArr = data.map(item => {
-    //     if (item[0] == "name") {
-    //         console.log("name")
-    //     }
-    // })
+   data.map((name) => {
+    return {
+        fullName: `${name.name.first} ${name.name.last}`
+    }
+   })
 
 }
 
 console.log(transformData(userData));
-console.log(userData[0]["name"]["first"], userData[0]["name"]["last"])
-console.log(userData[0]["dob"]["date"])
+// console.log(userData[0]["name"]["first"], userData[0]["name"]["last"])
+// console.log(userData[0]["dob"]["date"])
