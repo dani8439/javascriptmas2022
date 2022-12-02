@@ -31,14 +31,15 @@ function transformData(data){
     // use toDateString on ["dob"]["date"]
 
    data.map((name) => {
+    let dt = new Date(name.dob.date)
     return {
         fullName: `${name.name.first} ${name.name.last}`,
-        birthday: `${name.dob.date}`
-        // wrong not showing parsed data. 
+        birthday: `${dt.toDateString()}`
     }
    })
 
 }
+
 
 console.log(transformData(userData));
 // console.log(userData[0]["name"]["first"], userData[0]["name"]["last"])
