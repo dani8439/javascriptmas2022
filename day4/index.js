@@ -13,5 +13,9 @@ output: "shh... the kittens are sleeping"
 Hint: endsWith and slice
 */
 
+const whisper = (sentence) => {
+    return (sentence.endsWith("!")) ? `shh... ${sentence.slice(0, sentence.length-1).toLowerCase()}` : `shh.. ${sentence.toLowerCase()}`
+}
+
 console.log(whisper("PLEASE STOP SHOUTING."));
 console.log(whisper("MA'AM, this is a Wendy's!"));
