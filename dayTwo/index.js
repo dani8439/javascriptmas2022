@@ -43,3 +43,20 @@ function transformData(data){
 console.log(transformData(userData));
 // console.log(userData[0]["name"]["first"], userData[0]["name"]["last"])
 // console.log(userData[0]["dob"]["date"])
+
+// function transformData(data){
+//     const revisedData = data.map(item => {
+//         return {
+//             fullName: `${item.name.first} ${item.name.last}`,
+//             birthday: convertDate(item.dob.date)
+//         }
+//     })
+//     return revisedData;
+// }
+
+// const convertDate = (dateString) => {
+//     const dateDate = new Date(dateString);
+//     return dateDate.toDateString();
+// }
+
+// console.log(transformData(userData));
