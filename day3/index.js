@@ -15,7 +15,16 @@ and for supper I want usually want pizza 🍕.
 */
 
 const faveFoods = {
-    breakfast: '',
-    lunch: '',
-    supper: ''
+    breakfast: 'oatmeal 🥣 and ☕ coffee',
+    lunch: 'a sandwich 🥪',
+    supper: 'pasta 🍝 and wine 🍷'
 }
+
+const faveFoodsStory = () => {
+    const { breakfast, lunch, supper } = faveFoods;
+    const meals = document.getElementById("meals");
+    meals.innerHTML = `<p> For breakfast I only like ${breakfast}. For lunch, I love ${lunch}, and for supper I usually want ${supper}.</p>`;
+}
+
+
+faveFoodsStory();
