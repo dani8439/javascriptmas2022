@@ -18,5 +18,12 @@ import products from "./data.js";
 */
 
 function getSaleItems(data){
+    const shoppingCart = data.filter(item => item.type === 'sweet').map(item => {
+        return {
+            item: item.item,
+            price: item.price 
+        }
+    });
+    return shoppingCart;
     
 };
